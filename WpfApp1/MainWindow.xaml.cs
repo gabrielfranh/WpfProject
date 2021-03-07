@@ -21,23 +21,13 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
-        ClienteViewModel viewModel = new MainViewModel();
+        MainViewModel viewModel = new MainViewModel();
 
         public MainWindow()
         {
             DataContext = viewModel;
 
             InitializeComponent();
-
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            viewModel.BotaoAcionado();
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
 
         }
     }
